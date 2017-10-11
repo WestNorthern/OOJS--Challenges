@@ -1,0 +1,48 @@
+body {
+	background: lightgrey;
+	text-align: center;
+	padding: 2%;
+}
+
+
+.header {
+	text-align: center;
+	background: ghostwhite;
+	color: salmon;
+	margin: 0 auto;
+	padding: 4%;
+	font-size: 1.5em;
+	border-radius: 5px;
+
+}
+
+#page-box {
+	text-align: center;
+	background: ghostwhite;
+	color: salmon;
+	margin-top: 5% ;
+	padding: 4%;
+	font-size: 1.1em;
+	height: auto;
+	border-radius: 5px;
+}
+
+.image-box {
+	/*position: relative;*/
+	display: inline;
+	width: auto;
+	height: auto;
+	/*background: darkgrey;*/
+	/*margin: 1%;*/
+	/*padding: 1%;*/
+	/*box-sizing: border-box;*/
+
+}
+
+.image-box > img {
+	height: 300px;
+	width: 300px;
+	margin: 1%;
+	/*max-width: 100%;*/
+
+}
