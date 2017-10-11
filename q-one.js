@@ -35,6 +35,7 @@ let multTest = new Multiplier;
 multTest.multiply(2);
 multTest.multiply(3);
 multTest.multiply(2);
+multTest.multiply(2);
 
 console.log(multTest.getCurrentValue());
 
