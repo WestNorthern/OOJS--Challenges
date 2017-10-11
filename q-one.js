@@ -19,7 +19,7 @@ class Multiplier {
 	// 		this.currentVal = this.currentVal * this.num;
 	// 		return this.currentVal;
 	// 	}
-	// } // End of stuff that worked
+	// }  End of stuff that worked
 
 	 return this.currentVal *= this.num;
 	}

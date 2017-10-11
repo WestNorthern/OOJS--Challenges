@@ -3,13 +3,13 @@
 
 class Album {
 	constructor(){
-	this.photos = [];
+	  this.photos = [];
 	}
 
 	addPhotos(photo){
 		this.photos.push(photo);
 	}
-
+	
 	listPhotos(){
 		let photoList = "";
 
