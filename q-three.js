@@ -24,6 +24,13 @@ class Library{
     	}
     }
   }
+  removeBookByTitle(name){
+    for (var i = 0; i < this.books.length; i++) {
+    	if (this.books[i].title === name){
+    		this.books.splice(i, 1);
+    	}
+    }
+  }
 }
 
 class Book{
@@ -47,5 +54,7 @@ cityLibrary.addBook(bookThree);
 console.log(cityLibrary.listBooks());
 console.log(cityLibrary.bookCount());
 console.log(cityLibrary.getBookByTitle('Dune'));
+cityLibrary.removeBookByTitle('Dune');
+console.log(cityLibrary.listBooks());
 
 
