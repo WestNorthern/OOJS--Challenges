@@ -14,6 +14,16 @@ class Library{
   	}
   	return bookList;
   }
+  bookCount(){
+  	return `The library contains ${this.books.length} books.`;
+  }
+  getBookByTitle(name){
+    for (var i = 0; i < this.books.length; i++) {
+    	if(this.books[i].title === name){
+    		return this.books[i];
+    	}
+    }
+  }
 }
 
 class Book{
@@ -35,5 +45,7 @@ cityLibrary.addBook(bookTwo);
 cityLibrary.addBook(bookThree);
 
 console.log(cityLibrary.listBooks());
+console.log(cityLibrary.bookCount());
+console.log(cityLibrary.getBookByTitle('Dune'));
 
 
