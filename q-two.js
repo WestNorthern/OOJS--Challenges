@@ -17,8 +17,6 @@ class Album {
 			photoList += `|| ${this.photos[i].photo} : ${this.photos[i].location} || `;
 		}
 
-
-
 		return photoList;
 	}
 	accessPhotoByIndex(num){
@@ -49,12 +47,20 @@ let machuPiccu = new Photo;
 
 let newPic = machuPiccu.takePhoto('incanland.jpg', 'peru');
 
+let grandeTetons = new Photo;
+
+let insertPic = grandeTetons.takePhoto('bigmountain.ngv', 'wyoming');
+
+
+
 console.log(newPic);
 
 let myPics = new Album;
 
 myPics.addPhotos({photo: 'stellamare.jpg', location: 'portugal'});
 myPics.addPhotos({photo: 'roda-de-centro.png', location: 'brazil'});
+
+myPics.addPhotos(insertPic);
 
 console.log(myPics.accessPhotoByIndex(1));
 
