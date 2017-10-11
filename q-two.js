@@ -3,7 +3,7 @@
 
 class Album {
 	constructor(){
-	this.photos = [];
+	  this.photos = [];
 	}
 
 	addPhotos(photo){

@@ -1,25 +1,39 @@
 // Question Three
 
-
-class Library	{
+class Library{
 	constructor(){
 		this.books = [];
-	}
-	addBooks(book){
-		this.books.push(book);
-	}
-	getBookByTitle(){
-
-	}
-	removeBookByTitle(){
-		
-	}
+  }
+  addBook(book){
+  	this.books.push(book);
+  }
+  listBooks(){
+  	let bookList = "";
+  	for (var i = 0; i < this.books.length; i++) {
+  		bookList += ` || ${this.books[i].title} : ${this.books[i].author} : ${this.books[i].genre} ||`;
+  	}
+  	return bookList;
+  }
 }
 
-class Books {
+class Book{
 	constructor(title, author, genre){
 		this.title = title;
+		this.author = author;
 		this.genre = genre;
-		this. author = author;
 	}
 }
+
+bookOne = new Book('Cryptonomicon', 'Neal Stephenson', 'Cyber-Thriller');
+bookTwo = new Book('Dune', 'Frank Herbert', 'Science Fiction');
+bookThree = new Book('IQ84', 'Haruki Murikami', 'Urban Fantasy');
+
+cityLibrary = new Library();
+
+cityLibrary.addBook(bookOne);
+cityLibrary.addBook(bookTwo);
+cityLibrary.addBook(bookThree);
+
+console.log(cityLibrary.listBooks());
+
+
