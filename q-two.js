@@ -9,7 +9,7 @@ class Album {
 	addPhotos(photo){
 		this.photos.push(photo);
 	}
-
+	
 	listPhotos(){
 		let photoList = "";
 
