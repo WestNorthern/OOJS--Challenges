@@ -16,7 +16,7 @@ console.log(theGoodTimesRoll);
 
 
 Date.prototype.formattedTime = function() {
-	hours = this.getHours().toString();
+	hours = String(this.getHours() % 12);
 	minutes = this.getMinutes().toString();
 	seconds = this.getSeconds().toString();
 
