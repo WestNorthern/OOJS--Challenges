@@ -3,13 +3,11 @@
 
 class Album {
 	constructor(){
-	  this.photos = [];
+		this.photos = [];
 	}
-
 	addPhotos(photo){
 		this.photos.push(photo);
 	}
-	
 	listPhotos(){
 		let photoList = "";
 
@@ -19,10 +17,14 @@ class Album {
 
 		return photoList;
 	}
-	accessPhotoByIndex(num){
+	printPhotoStringByIndex(num){
 		this.num = num - 1;
 		return `[[${this.num + 1}]]|| ${this.photos[this.num].url} : ${this.photos[this.num].location} ||`;
 	}
+	accessPhotoByIndex(num){
+		return this.photos[num+1];
+	}
+	
 
 
 };
