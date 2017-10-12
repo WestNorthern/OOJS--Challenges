@@ -7,14 +7,10 @@ class Multiplier {
 		this.currentVal = 1;
 	}
 	multiply(num){
-	
-	// this.num = num;
-
-	return this.currentVal *= num;
+		return this.currentVal *= this.num;
 	}
 
 	getCurrentValue(){
-
 		return this.currentVal;
 	}
 }
