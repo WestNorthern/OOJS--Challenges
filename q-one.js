@@ -6,8 +6,8 @@ class Multiplier {
 		this.num = num;
 		this.currentVal = 1;
 	}
-	multiply(num){
-		return this.currentVal *= this.num;
+	multiply(){
+		this.currentVal *= this.num;
 	}
 
 	getCurrentValue(){
